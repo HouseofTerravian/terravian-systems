@@ -1,65 +1,246 @@
-import Image from "next/image";
+import Link from "next/link";
+
+const pillars = [
+  {
+    label: "Productivity",
+    desc: "Systems that reclaim time and create operational clarity.",
+  },
+  {
+    label: "Performance",
+    desc: "Platforms built for athletes, competitors, and high performers.",
+  },
+  {
+    label: "Identity",
+    desc: "Infrastructure that supports personal brand and digital presence.",
+  },
+  {
+    label: "Competition",
+    desc: "Tooling for structured league and NIL ecosystem management.",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      {/* Hero */}
+      <section
+        style={{
+          backgroundColor: "#FFFFFF",
+          padding: "128px 24px 104px",
+          borderBottom: "1px solid #E8E8E8",
+        }}
+      >
+        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <div
+            style={{
+              width: "40px",
+              height: "2px",
+              backgroundColor: "#B11226",
+              marginBottom: "48px",
+            }}
+          />
+          <h1
+            style={{
+              fontSize: "clamp(52px, 8vw, 96px)",
+              fontWeight: 700,
+              color: "#0B0B0B",
+              lineHeight: "1.02",
+              letterSpacing: "-0.03em",
+              marginBottom: "0",
+            }}
+          >
+            Terravian Systems
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <div
+            style={{
+              width: "200px",
+              height: "3px",
+              backgroundColor: "#B11226",
+              margin: "20px 0 36px",
+            }}
+          />
+          <p
+            style={{
+              fontSize: "clamp(20px, 2.5vw, 26px)",
+              color: "#333",
+              fontWeight: 400,
+              marginBottom: "16px",
+              maxWidth: "640px",
+              lineHeight: "1.4",
+              letterSpacing: "-0.01em",
+            }}
+          >
+            Infrastructure for Digital Platforms.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <p
+            style={{
+              fontSize: "16px",
+              color: "#666",
+              maxWidth: "560px",
+              lineHeight: "1.85",
+              marginBottom: "60px",
+            }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            Building and operating software systems across productivity,
+            performance, identity, and competition.
+          </p>
+          <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+            <Link
+              href="/apps"
+              style={{
+                display: "inline-block",
+                padding: "14px 36px",
+                backgroundColor: "#0B0B0B",
+                color: "#FFFFFF",
+                textDecoration: "none",
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+              }}
+            >
+              View Apps
+            </Link>
+            <Link
+              href="/about"
+              style={{
+                display: "inline-block",
+                padding: "14px 36px",
+                backgroundColor: "transparent",
+                color: "#0B0B0B",
+                textDecoration: "none",
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+                border: "1px solid #B11226",
+              }}
+            >
+              Learn More
+            </Link>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Pillars */}
+      <section
+        style={{
+          backgroundColor: "#0B0B0B",
+          padding: "80px 24px",
+        }}
+      >
+        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <div
+            style={{
+              fontSize: "10px",
+              fontWeight: 600,
+              letterSpacing: "0.16em",
+              textTransform: "uppercase",
+              color: "#444",
+              marginBottom: "40px",
+            }}
+          >
+            Platform Focus
+          </div>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+              gap: "1px",
+              backgroundColor: "#1C1C1C",
+              border: "1px solid #1C1C1C",
+            }}
+          >
+            {pillars.map((item) => (
+              <div
+                key={item.label}
+                style={{
+                  backgroundColor: "#0B0B0B",
+                  padding: "44px 32px",
+                  borderLeft: "2px solid #B11226",
+                }}
+              >
+                <div
+                  style={{
+                    color: "#FFFFFF",
+                    fontSize: "14px",
+                    fontWeight: 600,
+                    letterSpacing: "0.06em",
+                    textTransform: "uppercase",
+                    marginBottom: "14px",
+                  }}
+                >
+                  {item.label}
+                </div>
+                <p
+                  style={{
+                    color: "#666",
+                    fontSize: "13px",
+                    lineHeight: "1.8",
+                  }}
+                >
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA strip */}
+      <section
+        style={{
+          backgroundColor: "#FFFFFF",
+          borderTop: "1px solid #E8E8E8",
+          padding: "80px 24px",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: "32px",
+          }}
+        >
+          <div>
+            <p
+              style={{
+                fontSize: "22px",
+                fontWeight: 600,
+                color: "#0B0B0B",
+                letterSpacing: "-0.01em",
+                marginBottom: "8px",
+              }}
+            >
+              Ready to engage?
+            </p>
+            <p style={{ fontSize: "14px", color: "#666" }}>
+              Platform inquiries, partnership interest, or general
+              correspondence.
+            </p>
+          </div>
+          <Link
+            href="/contact"
+            style={{
+              display: "inline-block",
+              padding: "14px 36px",
+              backgroundColor: "#B11226",
+              color: "#FFFFFF",
+              textDecoration: "none",
+              fontSize: "12px",
+              fontWeight: 600,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+            }}
+          >
+            Contact
+          </Link>
+        </div>
+      </section>
+    </>
   );
 }
