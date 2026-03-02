@@ -18,14 +18,14 @@ const apps = [
     name: "Win The Hour",
     description:
       "Productivity and time-accountability platform built for high-performance individuals who operate on structured daily systems.",
-    href: "#",
+    href: "https://winthehour.app",
     active: true,
   },
   {
     name: "Crownstrike",
     description:
       "Competitive performance tracking and analytics system for structured competition environments.",
-    href: "#",
+    href: "https://app.crownstrikeofficial.com",
     active: true,
   },
   {
@@ -151,6 +151,8 @@ export default function Apps() {
                 {app.href && app.active && (
                   <a
                     href={app.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
                       display: "inline-block",
                       padding: "10px 24px",
