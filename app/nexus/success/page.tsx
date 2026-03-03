@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Nexus™ Subscription Confirmed | Terravian Systems",
@@ -118,7 +117,7 @@ export default function NexusSuccess() {
               opacity: 0.85,
             }}
           >
-            Your Nexus™ platform access is active.
+            Your Nexus™ subscription is active.
           </p>
 
           {/* Body */}
@@ -128,11 +127,25 @@ export default function NexusSuccess() {
               color: C.textSecondary,
               lineHeight: "1.9",
               maxWidth: "480px",
-              margin: "0 auto",
+              margin: "0 auto 16px",
             }}
           >
             Thank you for subscribing. Your account has been registered with our
             billing system. You will receive a receipt via email from Stripe.
+          </p>
+
+          {/* Trust line */}
+          <p
+            style={{
+              fontSize: "12px",
+              color: C.textMuted,
+              lineHeight: "1.8",
+              maxWidth: "480px",
+              margin: "0 auto",
+              letterSpacing: "0.02em",
+            }}
+          >
+            Subscription management and billing are handled securely through Stripe.
           </p>
         </div>
       </section>
@@ -240,23 +253,40 @@ export default function NexusSuccess() {
             </div>
 
             {/* CTA */}
-            {/* TODO: Replace href with /nexus/dashboard once auth is wired */}
-            <Link
-              href="/nexus"
-              style={{
-                display: "inline-block",
-                padding: "14px 44px",
-                backgroundColor: C.gold,
-                color: "#0B0B0D",
-                textDecoration: "none",
-                fontSize: "11px",
-                fontWeight: 700,
-                letterSpacing: "0.16em",
-                textTransform: "uppercase",
-              }}
-            >
-              Access Nexus
-            </Link>
+            {/* TODO: Once auth is wired — replace button with:
+                <Link href="/login"> or <Link href="/nexus/dashboard">
+                and label: "Access Nexus Dashboard" */}
+            <div>
+              <button
+                disabled
+                style={{
+                  display: "inline-block",
+                  padding: "14px 44px",
+                  backgroundColor: C.bgCard,
+                  color: C.textMuted,
+                  border: `1px solid ${C.borderStrong}`,
+                  fontSize: "11px",
+                  fontWeight: 700,
+                  letterSpacing: "0.16em",
+                  textTransform: "uppercase",
+                  cursor: "not-allowed",
+                  opacity: 0.6,
+                }}
+              >
+                Dashboard Access Pending
+              </button>
+              <p
+                style={{
+                  marginTop: "14px",
+                  fontSize: "11px",
+                  color: C.textMuted,
+                  lineHeight: "1.75",
+                  letterSpacing: "0.01em",
+                }}
+              >
+                Dashboard access will be enabled once account provisioning is complete.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -300,22 +330,6 @@ export default function NexusSuccess() {
             time through your Stripe billing portal.
           </p>
 
-          {/* Back link */}
-          <div style={{ marginTop: "32px" }}>
-            <Link
-              href="/"
-              style={{
-                fontSize: "11px",
-                color: C.goldDim,
-                textDecoration: "none",
-                letterSpacing: "0.1em",
-                textTransform: "uppercase",
-                fontWeight: 500,
-              }}
-            >
-              Return to Terravian Systems
-            </Link>
-          </div>
         </div>
       </section>
 
