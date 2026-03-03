@@ -11,7 +11,7 @@ const apps = [
     name: "Nexus",
     description:
       "Central command infrastructure for platform management and internal operations across the Terravian Systems portfolio.",
-    href: "#",
+    href: "/nexus",
     active: true,
   },
   {
