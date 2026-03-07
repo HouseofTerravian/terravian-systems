@@ -160,6 +160,18 @@ export default function Footer() {
           Toravian Dynasty Trust &nbsp;&middot;&nbsp; MCM Enterprises
         </p>
       </div>
+      <div
+        style={{
+          maxWidth: "1200px",
+          margin: "16px auto 0",
+          paddingTop: "16px",
+          borderTop: "1px solid #1C1C1C",
+        }}
+      >
+        <p style={{ color: "#2A2A2A", fontSize: "11px" }}>
+          All brand names and marks are trademarks of House of Terravian.
+        </p>
+      </div>
     </footer>
   );
 }

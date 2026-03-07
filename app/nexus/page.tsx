@@ -566,7 +566,7 @@ export default function Nexus() {
                   marginBottom: "40px",
                 }}
               >
-                Secured access to the Nexus™ early deployment environment.
+                Secured access to the Nexus early deployment environment.
                 One payment. No subscription. Access confirmed on checkout.
               </p>
 
@@ -712,7 +712,7 @@ export default function Nexus() {
               Enterprise or partnership inquiry?
             </p>
             <p style={{ fontSize: "13px", color: C.textMuted }}>
-              Nexus™ supports custom tier structures for operators and platform partners.
+              Nexus supports custom tier structures for operators and platform partners.
             </p>
           </div>
           <Link
