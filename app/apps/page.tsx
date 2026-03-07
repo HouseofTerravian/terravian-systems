@@ -8,35 +8,35 @@ export const metadata: Metadata = {
 
 const apps = [
   {
-    name: "Nexus",
+    name: "Nexus™",
     description:
       "Central command infrastructure for platform management and internal operations across the Terravian Systems portfolio.",
     href: "/nexus",
     active: true,
   },
   {
-    name: "Win The Hour",
+    name: "Win The Hour™",
     description:
       "Productivity and time-accountability platform built for high-performance individuals who operate on structured daily systems.",
     href: "https://winthehour.app",
     active: true,
   },
   {
-    name: "Crownstrike",
+    name: "Crownstrike™",
     description:
       "Competitive performance tracking and analytics system for structured competition environments.",
     href: "https://app.crownstrikeofficial.com",
     active: true,
   },
   {
-    name: "NILGenius",
+    name: "NILGenius™",
     description:
       "NIL deal management and athlete brand infrastructure for the modern collegiate ecosystem.",
     href: "#",
     active: true,
   },
   {
-    name: "StepLeague",
+    name: "StepLeague™",
     description:
       "League operations and bracket management platform for competitive step programs and performance organizations.",
     href: "#",

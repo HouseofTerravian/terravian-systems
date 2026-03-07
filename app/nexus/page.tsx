@@ -712,7 +712,7 @@ export default function Nexus() {
               Enterprise or partnership inquiry?
             </p>
             <p style={{ fontSize: "13px", color: C.textMuted }}>
-              Nexus supports custom tier structures for operators and platform partners.
+              Nexus™ supports custom tier structures for operators and platform partners.
             </p>
           </div>
           <Link

@@ -7,7 +7,7 @@ const links = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Apps", href: "/apps" },
-  { label: "Nexus", href: "/nexus" },
+  { label: "Nexus™", href: "/nexus" },
   { label: "Legal", href: "/legal" },
   { label: "Contact", href: "/contact" },
 ];
