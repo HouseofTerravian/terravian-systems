@@ -4,6 +4,20 @@ export const metadata: Metadata = {
   title: "About — Terravian Systems",
   description:
     "Terravian Systems is a software infrastructure company building and operating digital platforms across distinct verticals.",
+  openGraph: {
+    title: "About — Terravian Systems",
+    description:
+      "Terravian Systems is a software infrastructure company building and operating digital platforms across distinct verticals.",
+    url: "https://terravian.systems/about",
+    siteName: "Terravian Systems",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About — Terravian Systems",
+    description:
+      "Terravian Systems is a software infrastructure company building and operating digital platforms across distinct verticals.",
+  },
 };
 
 const sections = [

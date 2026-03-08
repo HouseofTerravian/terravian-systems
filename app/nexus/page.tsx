@@ -5,6 +5,20 @@ export const metadata: Metadata = {
   title: "Nexus™ — Terravian Systems",
   description:
     "Platform orchestrator for digital infrastructure. Govern routing, billing, identity, and AI access from a single control layer.",
+  openGraph: {
+    title: "Nexus™ — Terravian Systems",
+    description:
+      "Platform orchestrator for digital infrastructure. Govern routing, billing, identity, and AI access from a single control layer.",
+    url: "https://terravian.systems/nexus",
+    siteName: "Terravian Systems",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nexus™ — Terravian Systems",
+    description:
+      "Platform orchestrator for digital infrastructure. Govern routing, billing, identity, and AI access from a single control layer.",
+  },
 };
 
 // ─── Design Tokens ────────────────────────────────────────────────────────────

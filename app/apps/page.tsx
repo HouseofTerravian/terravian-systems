@@ -4,6 +4,20 @@ export const metadata: Metadata = {
   title: "Apps — Terravian Systems",
   description:
     "Software products developed and operated under Terravian Systems infrastructure.",
+  openGraph: {
+    title: "Apps — Terravian Systems",
+    description:
+      "Software products developed and operated under Terravian Systems infrastructure.",
+    url: "https://terravian.systems/apps",
+    siteName: "Terravian Systems",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Apps — Terravian Systems",
+    description:
+      "Software products developed and operated under Terravian Systems infrastructure.",
+  },
 };
 
 const apps = [

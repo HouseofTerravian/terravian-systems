@@ -3,6 +3,18 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Nexus™ Subscription Confirmed | Terravian Systems",
   description: "Your Nexus™ subscription has been successfully activated.",
+  openGraph: {
+    title: "Nexus™ Subscription Confirmed | Terravian Systems",
+    description: "Your Nexus™ subscription has been successfully activated.",
+    url: "https://terravian.systems/nexus/success",
+    siteName: "Terravian Systems",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nexus™ Subscription Confirmed | Terravian Systems",
+    description: "Your Nexus™ subscription has been successfully activated.",
+  },
 };
 
 // ─── Design Tokens (matches /nexus) ──────────────────────────────────────────

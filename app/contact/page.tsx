@@ -4,6 +4,20 @@ export const metadata: Metadata = {
   title: "Contact — Terravian Systems",
   description:
     "Platform inquiries, partnership interest, or general correspondence.",
+  openGraph: {
+    title: "Contact — Terravian Systems",
+    description:
+      "Platform inquiries, partnership interest, or general correspondence.",
+    url: "https://terravian.systems/contact",
+    siteName: "Terravian Systems",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact — Terravian Systems",
+    description:
+      "Platform inquiries, partnership interest, or general correspondence.",
+  },
 };
 
 export default function Contact() {

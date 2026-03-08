@@ -4,6 +4,20 @@ export const metadata: Metadata = {
   title: "Legal — Terravian Systems",
   description:
     "Governing policies for use of Terravian Systems platforms and services.",
+  openGraph: {
+    title: "Legal — Terravian Systems",
+    description:
+      "Governing policies for use of Terravian Systems platforms and services.",
+    url: "https://terravian.systems/legal",
+    siteName: "Terravian Systems",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Legal — Terravian Systems",
+    description:
+      "Governing policies for use of Terravian Systems platforms and services.",
+  },
 };
 
 const policies = [
